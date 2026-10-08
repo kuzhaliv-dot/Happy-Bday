@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Spideyy! 🕷️</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+
+    background:
+        radial-gradient(circle at 8% 12%, rgba(255,255,255,.9) 0 2%, transparent 3%),
+        radial-gradient(circle at 90% 18%, rgba(255,255,255,.8) 0 2%, transparent 3%),
+        radial-gradient(circle at 15% 85%, rgba(185,225,235,.55) 0 4%, transparent 5%),
+        linear-gradient(145deg, #eafaff, #ccecf5, #e0f6f5);
+
+    font-family: "Fredoka", sans-serif;
+    color: #315867;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow-x: hidden;
+}
+
+
+/* ---------------- FLOATING BEACH DECOR ---------------- */
+
+.float {
+    position: fixed;
+    pointer-events: none;
+    z-index: 1;
+
+    color: #6ca8b8;
+
+    animation: floating 6s ease-in-out infinite;
+}
+
+.f1 {
+    top: 6%;
+    left: 5%;
+    font-size: 28px;
+}
+
+.f2 {
+    top: 16%;
+    right: 6%;
+    font-size: 27px;
+    animation-delay: 1s;
+}
+
+.f3 {
+    bottom: 13%;
+    left: 7%;
+    font-size: 25px;
+    animation-delay: 2s;
+}
+
+.f4 {
+    bottom: 16%;
+    right: 7%;
+    font-size: 28px;
+    animation-delay: 3s;
+}
+
+@keyframes floating {
+
+    0%, 100% {
+        transform: translateY(0) rotate(-4deg);
+    }
+
+    50% {
+        transform: translateY(-14px) rotate(5deg);
+    }
+}
+
+
+/* ---------------- MAIN ---------------- */
+
+.wrapper {
+    width: min(450px, 94vw);
+    text-align: center;
+    padding: 25px 0;
+    z-index: 5;
+}
+
+.title {
+
+    font-family: "Baloo 2", cursive;
+
+    font-size: clamp(30px, 8vw, 42px);
+
+    font-weight: 800;
+
+    color: #4c9db1;
+
+    line-height: 1;
+
+    text-shadow:
+        0 3px 0 rgba(255,255,255,.8);
+}
+
+.subtitle {
+
+    margin-top: 6px;
+
+    font-size: 17px;
+
+    color: #527988;
+}
+
+.countdown {
+
+    margin-top: 5px;
+
+    font-size: 14px;
+
+    color: #438da3;
+}
+
+
+/* ---------------- MACHINE ---------------- */
+
+.machine {
+
+    margin-top: 22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #b9e2ec,
+            #a6d7e3
+        );
+
+    border: 7px solid #5c9bab;
+
+    border-radius: 30px;
+
+    padding: 15px;
+
+    box-shadow:
+        0 10px 0 #528797,
+        0 20px 40px rgba(61,117,133,.22);
+}
+
+
+/* ---------------- MACHINE HEADER ---------------- */
+
+.machine-header {
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #e9f9fb;
+
+    border: 4px solid #5c9bab;
+
+    border-radius: 17px;
+
+    color: #417b8d;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* ---------------- GLASS ---------------- */
+
+.glass {
+
+    position: relative;
+
+    height: 355px;
+
+    margin-top: 12px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.72),
+            rgba(207,241,247,.55)
+        ),
+
+        #ccecf3;
+
+    border: 5px solid #5c9bab;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        inset 0 0 30px rgba(83,150,166,.13);
+}
+
+
+/* little wave effect inside machine */
+
+.glass::after {
+
+    content: "〰 〰 〰 〰 〰";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    color: rgba(255,255,255,.7);
+
+    font-size: 22px;
+
+    letter-spacing: 3px;
+
+    pointer-events: none;
+}
+
+
+/* ---------------- CLAW ---------------- */
+
+.claw {
+
+    position: absolute;
+
+    top: 5px;
+    left: 50%;
+
+    width: 65px;
+    height: 110px;
+
+    transform: translateX(-50%);
+
+    transition: left .7s ease;
+
+    z-index: 20;
+}
+
+.rope {
+
+    position: absolute;
+
+    left: 30px;
+    top: 0;
+
+    width: 4px;
+    height: 55px;
+
+    background: #54737b;
+}
+
+.claw-head {
+
+    position: absolute;
+
+    top: 48px;
+    left: 12px;
+
+    width: 40px;
+    height: 27px;
+
+    background: #f6d987;
+
+    border: 4px solid #987b38;
+
+    border-radius: 12px 12px 8px 8px;
+}
+
+.arm {
+
+    position: absolute;
+
+    top: 68px;
+
+    width: 9px;
+    height: 38px;
+
+    background: #f6d987;
+
+    border: 3px solid #987b38;
+
+    border-top: none;
+
+    border-radius: 0 0 12px 12px;
+}
+
+.arm.left {
+
+    left: 9px;
+
+    transform: rotate(25deg);
+}
+
+.arm.right {
+
+    right: 9px;
+
+    transform: rotate(-25deg);
+}
+
+
+/* ---------------- PRIZES ---------------- */
+/* EMOJIS UNCHANGED */
+
+.prizes {
+
+    position: absolute;
+
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+
+    height: 180px;
+}
+
+.prize {
+
+    position: absolute;
+
+    width: 48px;
+    height: 48px;
+
+    background: #ffffff;
+
+    border: 3px solid #79b5c3;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    box-shadow:
+        0 4px 0 rgba(70,120,135,.18);
+
+    transition: transform .2s;
+}
+
+.prize:hover {
+
+    transform:
+        scale(1.15)
+        rotate(5deg);
+}
+
+
+/* positions */
+
+.p1 { left: 2%; bottom: 5px; }
+.p2 { left: 14%; bottom: 38px; }
+.p3 { left: 27%; bottom: 5px; }
+.p4 { left: 39%; bottom: 45px; }
+.p5 { left: 51%; bottom: 10px; }
+.p6 { left: 63%; bottom: 43px; }
+.p7 { left: 75%; bottom: 5px; }
+.p8 { left: 86%; bottom: 50px; }
+
+.p9 { left: 8%; bottom: 82px; }
+.p10 { left: 22%; bottom: 85px; }
+.p11 { left: 36%; bottom: 78px; }
+.p12 { left: 50%; bottom: 88px; }
+.p13 { left: 64%; bottom: 80px; }
+.p14 { left: 77%; bottom: 88px; }
+.p15 { left: 88%; bottom: 80px; }
+
+
+/* ---------------- CONTROLS ---------------- */
+
+.controls {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: 13px;
+}
+
+.counter {
+
+    background: #effcff;
+
+    border: 4px solid #5c9bab;
+
+    border-radius: 13px;
+
+    padding: 11px 13px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    flex: 1;
+
+    color: #477786;
+}
+
+button {
+
+    border: 4px solid #568c9b;
+
+    background: #f7dda0;
+
+    color: #526b58;
+
+    font-family: inherit;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    padding: 12px 22px;
+
+    border-radius: 13px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 0 #568c9b;
+
+    transition: .15s;
+}
+
+button:hover {
+
+    transform:
+        translateY(-2px);
+}
+
+button:active {
+
+    transform:
+        translateY(4px);
+
+    box-shadow:
+        0 1px 0 #568c9b;
+}
+
+
+/* ---------------- POPUP ---------------- */
+
+.overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(43,93,108,.48);
+
+    backdrop-filter: blur(5px);
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    z-index: 100;
+}
+
+.overlay.show {
+
+    display: flex;
+}
+
+.card {
+
+    width: min(380px, 92vw);
+
+    background: #f5fdff;
+
+    border: 6px solid #72adbb;
+
+    border-radius: 27px;
+
+    padding: 30px 24px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px rgba(40,90,105,.3);
+
+    animation: pop .35s ease;
+}
+
+@keyframes pop {
+
+    from {
+
+        transform:
+            scale(.7)
+            rotate(-5deg);
+
+        opacity: 0;
+    }
+
+    to {
+
+        transform:
+            scale(1)
+            rotate(0);
+
+        opacity: 1;
+    }
+}
+
+.card-emoji {
+
+    font-size: 55px;
+}
+
+.card h2 {
+
+    margin-top: 10px;
+
+    color: #4b96aa;
+
+    font-size: 23px;
+}
+
+.card p {
+
+    margin-top: 13px;
+
+    font-size: 19px;
+
+    line-height: 1.5;
+
+    color: #426875;
+}
+
+.close {
+
+    margin-top: 22px;
+
+    background: #8fc8d5;
+
+    color: white;
+
+    border-color: #568c9b;
+
+    box-shadow:
+        0 5px 0 #568c9b;
+}
+
+
+/* ---------------- FINAL ---------------- */
+
+.final {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+
+        radial-gradient(
+            circle at 20% 20%,
+            #c9edf5,
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 80% 80%,
+            #d9f3e8,
+            transparent 30%
+        ),
+
+        #effcff;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 25px;
+
+    z-index: 200;
+}
+
+.final.show {
+
+    display: flex;
+}
+
+.final-box {
+
+    max-width: 500px;
+
+    animation: pop .6s ease;
+}
+
+.final-emoji {
+
+    font-size: 42px;
+
+    color: #62a8b9;
+
+    line-height: 1.6;
+}
+
+.final h2 {
+
+    font-family: "Baloo 2", cursive;
+
+    color: #4b96aa;
+
+    font-size: 38px;
+
+    margin-top: 10px;
+}
+
+.final p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-top: 10px;
+
+    color: #4b707c;
+}
+
+.small {
+
+    margin-top: 20px;
+
+    font-size: 13px !important;
+
+    opacity: .65;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- floating decorations -->
+
+<div class="float f1">• 🌊˖°𓇼⋆</div>
+
+<div class="float f2">🐋</div>
+
+<div class="float f3">🐚 𓈒𓏸</div>
+
+<div class="float f4">🌊˖°𓇼⋆</div>
+
+
+<div class="wrapper">
+
+    <div class="title">
+        HAPPY BIRTHDAY SPIDEYY!! 🕷️🎂
+    </div>
+
+    <div class="subtitle">
+        ...well, almost 😭
+    </div>
+
+    <div class="countdown">
+        16 more days to go 👀💗
+    </div>
+
+
+    <div class="machine">
+
+        <div class="machine-header">
+            • 🌊˖°𓇼⋆ Your'S TINY GIFT MACHINE 🐋🐚 𓈒𓏸 
+        </div>
+
+
+        <div class="glass">
+
+            <!-- CLAW -->
+
+            <div class="claw" id="claw">
+
+                <div class="rope"></div>
+
+                <div class="claw-head"></div>
+
+                <div class="arm left"></div>
+
+                <div class="arm right"></div>
+
+            </div>
+
+
+            <!-- PRIZES -->
+
+            <div class="prizes">
+
+                <div class="prize p1">🎬</div>
+                <div class="prize p2">🙌🏻</div>
+                <div class="prize p3">💗</div>
+                <div class="prize p4">🔥</div>
+                <div class="prize p5">😭</div>
+                <div class="prize p6">❣</div>
+                <div class="prize p7">🤞🏻</div>
+                <div class="prize p8">🎀</div>
+
+                <div class="prize p9">😂</div>
+                <div class="prize p10">👀</div>
+                <div class="prize p11">💌</div>
+                <div class="prize p12">⭐</div>
+                <div class="prize p13">🌹</div>
+                <div class="prize p14">🌷</div>
+                <div class="prize p15">✨</div>
+
+            </div>
+
+        </div>
+
+
+        <div class="controls">
+
+            <div class="counter">
+                <span id="count">0</span> / 17 collected 💗
+            </div>
+
+            <button onclick="grabPrize()">
+                GRAB! 🕹️
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- POPUP -->
+
+<div class="overlay" id="overlay">
+
+    <div class="card">
+
+        <div class="card-emoji" id="cardEmoji">
+            💗
+        </div>
+
+        <h2>
+            one thing I love about you...
+        </h2>
+
+        <p id="cardText"></p>
+
+        <button class="close" onclick="closeCard()">
+            next one → 💗
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- FINAL SCREEN -->
+
+<div class="final" id="final">
+
+    <div class="final-box">
+
+        <div class="final-emoji">
+            • 🌊˖°𓇼⋆🐋🐚 𓈒𓏸
+        </div>
+
+        <h2>
+            YOU GOT ALL 17!!
+        </h2>
+
+        <p>
+            Okay, that's enough emotional damage for one day.
+            😭
+        </p>
+
+        <p>
+            There are obviously approximately 170 more things
+            I could've put here.
+        </p>
+
+        <p>
+            But you'll have to wait another 16 days for those 👀
+        </p>
+
+        <p>
+            happy almost birthday, spideyy 😘❤️
+        </p>
+
+        <p class="small">
+            tiny gift before the actual birthday 🎀
+        </p>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* ----------------------------------
+   YOUR 17 REASONS
+----------------------------------- */
+
+const reasons = [
+
+    {
+        emoji: "📈🎬",
+        text: "your peak movie knowledge"
+    },
+
+    {
+        emoji: "🙌🏻",
+        text: "your smile"
+    },
+
+    {
+        emoji: "❣",
+        text: "your complete trust in me"
+    },
+
+    {
+        emoji: "💖",
+        text: "your unspoken understanding"
+    },
+
+    {
+        emoji: "🌷",
+        text: "the way you care about everyone"
+    },
+
+    {
+        emoji: "🔥🙌🏻",
+        text: "your dance"
+    },
+
+    {
+        emoji: "🤡",
+        text: "your craziness"
+    },
+
+    {
+        emoji: "😭",
+        text: "your mokka jokes"
+    },
+
+    {
+        emoji: "😅",
+        text: "your sotta mandai"
+    },
+
+    {
+        emoji: "🤞🏻",
+        text: "your loyalty, always"
+    },
+
+    {
+        emoji: "😂",
+        text: "our stupid conversations that somehow last for hours"
+    },
+
+    {
+        emoji: "🤗",
+        text: "the way you always have my back"
+    },
+
+    {
+        emoji: "💖",
+        text: "the comfort of knowing I can always count on you"
+    },
+
+    {
+        emoji: "😭",
+        text: "your bodhai face"
+    },
+
+    {
+        emoji: "📸",
+        text: "the memories we've made over the most random things"
+    },
+
+    {
+        emoji: "💀",
+        text: "your absolutely questionable decisions"
+    },
+
+    {
+        emoji: "💗",
+        text: "how you never make me feel judged"
+    }
+
+];
+
+
+/* ----------------------------------
+   GAME
+----------------------------------- */
+
+let collected = [];
+
+let count = 0;
+
+
+function grabPrize() {
+
+    if (count >= 17) return;
+
+
+    /* choose an uncollected reason */
+
+    let available = [];
+
+    for (let i = 0; i < 17; i++) {
+
+        if (!collected.includes(i)) {
+
+            available.push(i);
+
+        }
+
+    }
+
+
+    const index =
+        available[Math.floor(Math.random() * available.length)];
+
+
+    collected.push(index);
+
+    count++;
+
+
+    /* move claw */
+
+    const claw =
+        document.getElementById("claw");
+
+
+    const positions =
+        [10, 23, 36, 50, 63, 76, 88];
+
+
+    const randomPosition =
+        positions[Math.floor(Math.random() * positions.length)];
+
+
+    claw.style.left =
+        randomPosition + "%";
+
+
+    /* reveal */
+
+    setTimeout(() => {
+
+        document.getElementById("cardEmoji")
+            .textContent =
+            reasons[index].emoji;
+
+
+        document.getElementById("cardText")
+            .textContent =
+            reasons[index].text;
+
+
+        document.getElementById("count")
+            .textContent =
+            count;
+
+
+        document.getElementById("overlay")
+            .classList.add("show");
+
+    }, 650);
+
+}
+
+
+function closeCard() {
+
+    document
+        .getElementById("overlay")
+        .classList.remove("show");
+
+
+    if (count === 17) {
+
+        setTimeout(() => {
+
+            document
+                .getElementById("final")
+                .classList.add("show");
+
+        }, 400);
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
